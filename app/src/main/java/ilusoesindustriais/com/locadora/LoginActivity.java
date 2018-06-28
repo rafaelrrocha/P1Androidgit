@@ -11,9 +11,9 @@ import android.widget.Toast;
 public class LoginActivity extends AppCompatActivity {
 
     private TextView textNome;
-    private TextView textEmail;
+    public TextView textEmail;
     private TextView textTelefone;
-    private TextView textSenha;
+    public TextView textSenha;
 
     private Button botaoConfirmar;
 
@@ -35,12 +35,23 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 textNome.getText();
-                textEmail.getText();
+                String textoEmail = textEmail.getText().toString();
                 textTelefone.getText();
-                textSenha.getText();
+                String textoSenha = textSenha.getText().toString();
 
                 startActivity(new Intent(LoginActivity.this, MainActivity.class));
                 Toast.makeText(getApplicationContext(), "Registrado com sucesso!", Toast.LENGTH_SHORT).show();
+
+
+                Intent intent = new Intent(LoginActivity.this, LoginRegistradoActivity.class);
+                intent.putExtra("e-mail", textoEmail);
+
+              //  startActivity( intent );
+
+                //Intent intent2 = new Intent(LoginActivity.this, LoginRegistradoActivity.class);
+                intent.putExtra("senha", textoSenha);
+
+                startActivity( intent );
 
 
 

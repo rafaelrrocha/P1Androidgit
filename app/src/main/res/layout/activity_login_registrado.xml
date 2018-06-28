@@ -34,7 +34,7 @@
         android:textColorHint="#f7f4f4" />
 
     <Button
-        android:id="@+id/botaoConfirmarId"
+        android:id="@+id/botaoConfirmarId2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
