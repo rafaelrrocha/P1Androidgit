@@ -26,5 +26,12 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+        botaoLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, LoginRegistradoActivity.class));
+            }
+        });
     }
 }
