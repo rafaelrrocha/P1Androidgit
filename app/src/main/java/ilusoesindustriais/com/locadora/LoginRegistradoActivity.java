@@ -1,11 +1,13 @@
 package ilusoesindustriais.com.locadora;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
 
 
 public class LoginRegistradoActivity extends AppCompatActivity {
@@ -47,6 +49,7 @@ public class LoginRegistradoActivity extends AppCompatActivity {
 
                 if (textoEmail2.equals(textoPassado) && (textoSenha2.equals(textoPassado2))){
                     Toast.makeText(getApplicationContext(), "Login Efetuado com Sucesso!", Toast.LENGTH_LONG).show();
+                    startActivity(new Intent(LoginRegistradoActivity.this, Generos.class));
                 }else{
                     Toast.makeText(getApplicationContext(), "Dados do Login Incorretos.", Toast.LENGTH_LONG).show();
                 }

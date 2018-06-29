@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#151515"
+    tools:context=".Generos">
+
+    <LinearLayout
+        android:layout_width="372dp"
+        android:layout_height="102dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="33dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="12dp"
+        android:layout_alignParentLeft="true">
+
+        <ImageView
+            android:id="@+id/acaoId"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+
+            android:layout_weight="1"
+            app:srcCompat="@drawable/gun"/>
+
+        <ImageView
+            android:id="@+id/animacaoId"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignStart="@+id/scifiId"
+            android:layout_alignTop="@+id/acaoId"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/mike"
+            android:layout_alignLeft="@+id/scifiId" />
+
+        <ImageView
+            android:id="@+id/aventuraId"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/acaoId"
+            android:layout_marginEnd="12dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/hat"
+            android:layout_marginRight="12dp"
+            android:layout_alignParentRight="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="168dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true">
+
+        <ImageView
+            android:id="@+id/comediaId"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/acaoId"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/laugh" />
+
+        <ImageView
+            android:id="@+id/scifiId"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/lightsaber" />
+
+        <ImageView
+            android:id="@+id/terrorId"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignStart="@+id/aventuraId"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/mask"
+            android:layout_alignLeft="@+id/aventuraId" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="358dp"
+        android:layout_height="102dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="102dp"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true">
+
+        <ImageView
+            android:id="@+id/documentarioId"
+            android:layout_width="61dp"
+            android:layout_height="100dp"
+            android:layout_alignStart="@+id/comediaId"
+            android:layout_alignTop="@+id/musicalId"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/documentary"
+            android:layout_alignLeft="@+id/comediaId" />
+
+        <ImageView
+            android:id="@+id/musicalId"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="36dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/musical" />
+
+        <ImageView
+            android:id="@+id/guerraId"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignStart="@+id/aventuraId"
+            android:layout_alignTop="@+id/musicalId"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/grenade"
+            android:layout_alignLeft="@+id/aventuraId" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="136dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Ação"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="65dp"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView3"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Animação"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/textView3"
+            android:layout_marginEnd="44dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Aventura"
+            android:textColor="@android:color/white"
+            android:layout_marginRight="44dp"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView3"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="223dp"
+            android:text="Comédia"
+            android:textColor="@android:color/white"
+            android:layout_alignRight="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView12"
+            android:layout_centerHorizontal="true"
+            android:text="Sci-Fi"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView5"
+            android:layout_alignTop="@+id/textView7"
+            android:text="Terror"
+            android:textColor="@android:color/white"
+            android:layout_alignRight="@+id/textView5" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="85dp"
+            android:layout_marginStart="28dp"
+            android:text="Documentário"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="28dp"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView9"
+            android:layout_centerHorizontal="true"
+            android:text="Musical"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView5"
+            android:layout_alignTop="@+id/textView10"
+            android:text="Guerra"
+            android:textColor="@android:color/white"
+            android:layout_alignRight="@+id/textView5" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
