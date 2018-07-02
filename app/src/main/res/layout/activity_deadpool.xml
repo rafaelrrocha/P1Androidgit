@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#151515"
+    tools:context=".Deadpool">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="194dp"
+        android:layout_height="279dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="22dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/deadpool" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="184dp"
+        android:layout_height="37dp"
+        android:layout_above="@+id/textView2"
+        android:layout_alignParentEnd="true"
+        android:background="#353131"
+        android:text="Elenco: Ryan Reynolds, Morena Baccarin, Ed Skrein"
+        android:textColor="#ea1313"
+        tools:layout_editor_absoluteX="194dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView13"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="-138dp"
+        android:background="#353131"
+        android:text="Direção: Tim Miller"
+        android:textColor="#ea1313"
+        tools:layout_editor_absoluteX="194dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/duracaoId"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/duracaoId"
+        android:layout_alignParentEnd="true"
+        android:background="#353131"
+        android:text="Duração: 107 min"
+        android:textColor="#ea1313"
+        tools:layout_editor_absoluteX="194dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/duracaoId"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView14"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="-209dp"
+        android:background="#353131"
+        android:text="Legendado"
+        android:textColor="#ea1313"
+        tools:layout_editor_absoluteX="194dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="138dp"
+        android:background="#353131"
+        android:text="Gênero: Ação"
+        android:textColor="#ea1313"
+        tools:layout_editor_absoluteX="194dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="209dp"
+        android:background="#353131"
+        android:text="Lançamento"
+        android:textColor="#ea1313"
+        tools:layout_editor_absoluteX="194dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="358dp"
+        android:layout_height="180dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="6dp"
+        android:layout_marginStart="12dp"
+        android:background="#353131"
+        android:text="Ex-militar e mercenário, Wade Wilson (Ryan Reynolds) é diagnosticado com câncer em estado terminal, porém encontra uma possibilidade de cura em uma sinistra experiência científica. Recuperado, com poderes e um incomum senso de humor, ele torna-se Deadpool e busca vingança contra o homem que destruiu sua vida."
+        android:textColor="#a17ee2"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignStart="@+id/textView"
+        android:text="Alugar" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignParentEnd="true"
+        android:text="Voltar" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="27dp"
+        android:layout_marginTop="33dp"
+        android:background="#353131"
+        android:text="Título: Deadpool"
+        android:textColor="#ea1313"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+</RelativeLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#151515"
+    tools:context=".Deadpool">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="194dp"
+        android:layout_height="279dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="22dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bond" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="184dp"
+        android:layout_height="37dp"
+        android:layout_above="@+id/textView2"
+        android:layout_alignParentEnd="true"
+        android:background="#353131"
+        android:text="Elenco: Daniel Craig, Eva Green, Mads Mikkelsen"
+        android:textColor="#ea1313"
+        tools:layout_editor_absoluteX="194dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView13"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="-138dp"
+        android:background="#353131"
+        android:text="Direção: Martin Campbell"
+        android:textColor="#ea1313"
+        tools:layout_editor_absoluteX="194dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/duracaoId"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/duracaoId"
+        android:layout_alignParentEnd="true"
+        android:background="#353131"
+        android:text="Duração: 138 min"
+        android:textColor="#ea1313"
+        tools:layout_editor_absoluteX="194dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/duracaoId"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView14"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="-209dp"
+        android:background="#353131"
+        android:text="Dublado"
+        android:textColor="#ea1313"
+        tools:layout_editor_absoluteX="194dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="138dp"
+        android:background="#353131"
+        android:text="Gênero: Ação"
+        android:textColor="#ea1313"
+        tools:layout_editor_absoluteX="194dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="209dp"
+        android:background="#353131"
+        android:text="Catálogo"
+        android:textColor="#ea1313"
+        tools:layout_editor_absoluteX="194dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignStart="@+id/textView"
+        android:text="Alugar" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignParentEnd="true"
+        android:text="Voltar" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginTop="36dp"
+        android:background="#353131"
+        android:text="Título: 007 Casino Royale"
+        android:textColor="#ea1313"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="353dp"
+            android:layout_height="152dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:fillViewport="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.866">
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:background="#353131"
+                android:text="A 1ª missão de James Bond (Daniel Craig) como agente 007 o leva a Madagascar. Sua tarefa é espionar o terrorista Mollaka (Sebastien Foucan), mas nem tudo sai como o planejado. Bond decide espionar por conta própria o restante da célula terrorista, o que o leva às Bahamas. Lá ele conhece Alex Dimitrios (Simon Abkarian) e sua namorada Solange (Caterina Murino). Alex está envolvido com Le Chiffre (Mads Mikkelsen), o banqueiro de organizações terroristas espalhadas pelo planeta, que pretende conseguir dinheiro em um jogo de pôquer milionário em Montenegro, no Cassino Royale. O MI6 envia Bond para jogar contra Le Chiffre, sabendo que caso Le Chiffre perca a partida isto desmontará sua organização. Mas para esta tarefa o agente 007 terá a companhia da sedutora Vesper Lynd (Eva Green), enviada por M (Judi Dench) para acompanhá-lo na missão."
+                android:textColor="#a17ee2"
+                android:textSize="18sp" />
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.constraint.ConstraintLayout>
+
+</RelativeLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#151515"
+    tools:context=".Deadpool">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="501dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="194dp"
+        android:layout_height="279dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="22dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bourne" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="184dp"
+        android:layout_height="37dp"
+        android:layout_above="@+id/textView2"
+        android:layout_alignParentEnd="true"
+        android:background="#353131"
+        android:text="Elenco: Matt Damon, Julia Stiles, David Strathairn"
+        android:textColor="#ea1313"
+        tools:layout_editor_absoluteX="194dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView13"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="-138dp"
+        android:background="#353131"
+        android:text="Direção: Paul Greengrass"
+        android:textColor="#ea1313"
+        tools:layout_editor_absoluteX="194dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/duracaoId"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/duracaoId"
+        android:layout_alignParentEnd="true"
+        android:background="#353131"
+        android:text="Duração: 116 min"
+        android:textColor="#ea1313"
+        tools:layout_editor_absoluteX="194dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/duracaoId"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView14"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="-209dp"
+        android:background="#353131"
+        android:text="Dublado"
+        android:textColor="#ea1313"
+        tools:layout_editor_absoluteX="194dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="138dp"
+        android:background="#353131"
+        android:text="Gênero: Ação"
+        android:textColor="#ea1313"
+        tools:layout_editor_absoluteX="194dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="209dp"
+        android:background="#353131"
+        android:text="Catálogo"
+        android:textColor="#ea1313"
+        tools:layout_editor_absoluteX="194dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignStart="@+id/textView"
+        android:text="Alugar" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignParentEnd="true"
+        android:text="Voltar" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="34dp"
+        android:background="#353131"
+        android:text="Título: O Ultimato Bourne"
+        android:textColor="#ea1313"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="match_parent"
+        android:layout_height="196dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="6dp"
+        android:layout_marginStart="12dp"
+        android:background="#353131"
+        android:text="Jason Bourne (Matt Damon) é um homem que vive sem país e sem passado após ter sido submetido a um treinamento brutal, ao qual não se lembra, por pessoas que não conhece. Ele é uma sofisticada arma humana, perseguida incessantemente pela CIA. Após sua última aparição ele decidiu sumir para sempre e esquecer a vida que lhe foi roubada. Entretanto uma matéria em um jornal de Londres, que especula sobre sua existência, faz com que ele torne-se mais uma vez um alvo. O programa Treadstone, que criou Bourne, já não existe mais, mas serviu de base para o programa Blackbriar, desenvolvido pelo Departamento de Defesa dos Estados Unidos. O Blackbriar desenvolve uma geração de novos matadores treinados secretamente pelo governo, que acredita que Bourne é uma ameaça de U$ 30 milhões que deve ser eliminada de uma vez por todas. Já Bourne vê neles uma oportunidade de descobrir quem realmente é e o que fizeram com ele."
+        android:textColor="#a17ee2"
+        android:textSize="18sp" />
+
+</RelativeLayout>

@@ -18,7 +18,28 @@
         </activity>
         <activity android:name=".LoginActivity" />
         <activity android:name=".LoginRegistradoActivity" />
-        <activity android:name=".Generos"></activity>
+        <activity android:name=".Generos" />
+        <activity android:name=".Acao" />
+        <activity android:name=".Animacao" />
+        <activity android:name=".Aventura" />
+        <activity android:name=".Comedia" />
+        <activity android:name=".Scifi" />
+        <activity android:name=".Terror" />
+        <activity android:name=".Documentario" />
+        <activity android:name=".Musical" />
+        <activity android:name=".Guerra" />
+        <activity android:name=".Deadpool" />
+        <activity android:name=".Bourne" />
+        <activity android:name=".DieHard" />
+        <activity android:name=".Bond" />
+        <activity android:name=".Mad" />
+        <activity android:name=".Batman" />
+        <activity android:name=".Dragon" />
+        <activity android:name=".Nemo" />
+        <activity android:name=".Panda" />
+        <activity android:name=".Mente" />
+        <activity android:name=".Toy" />
+        <activity android:name=".Gelo"></activity>
     </application>
 
 </manifest>
