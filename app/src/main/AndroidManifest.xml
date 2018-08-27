@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Batman">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -33,7 +33,7 @@
         <activity android:name=".DieHard" />
         <activity android:name=".Bond" />
         <activity android:name=".Mad" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".Batman" />
         <activity android:name=".Dragon" />
         <activity android:name=".Nemo" />
         <activity android:name=".Panda" />
