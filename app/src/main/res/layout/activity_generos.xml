@@ -239,6 +239,15 @@
             android:text="Guerra"
             android:textColor="@android:color/white" />
 
+        <ImageButton
+            android:id="@+id/cartId"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/cart" />
+
     </RelativeLayout>
 
 </RelativeLayout>

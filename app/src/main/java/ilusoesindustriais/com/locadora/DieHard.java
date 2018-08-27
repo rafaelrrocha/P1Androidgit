@@ -15,6 +15,7 @@ public class DieHard extends AppCompatActivity {
 
     private ImageView seta;
     private TextView setaTexto;
+    private TextView tituloDieHard;
 
 
 
@@ -28,12 +29,18 @@ public class DieHard extends AppCompatActivity {
         carrinhoTexto = findViewById(R.id.carrinhoTextoId);
         seta = findViewById(R.id.setaId);
         setaTexto = findViewById(R.id.setaTextoId);
+        tituloDieHard = findViewById(R.id.tituloDieHardId);
 
 
 
         carrinho.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String titulo = tituloDieHard.getText().toString();
+                Intent intent = new Intent(DieHard.this, Cart.class);
+                intent.putExtra("nome", titulo);
+
+                startActivity( intent );
                 Toast.makeText(getApplicationContext(), "Produto Adicionado ao Carrinho", Toast.LENGTH_SHORT).show();
             }
         });

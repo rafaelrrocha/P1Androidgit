@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 
 public class Generos extends AppCompatActivity {
@@ -17,6 +18,8 @@ public class Generos extends AppCompatActivity {
     private ImageView documentario;
     private ImageView musical;
     private ImageView guerra;
+
+    private ImageButton cart;
 
 
 
@@ -35,6 +38,8 @@ public class Generos extends AppCompatActivity {
         documentario = findViewById(R.id.documentarioId);
         musical = findViewById(R.id.musicalId);
         guerra = findViewById(R.id.guerraId);
+
+        cart = findViewById(R.id.cartId);
 
 
         acao.setOnClickListener(new View.OnClickListener() {
@@ -97,6 +102,13 @@ public class Generos extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(Generos.this, Guerra.class));
+            }
+        });
+
+        cart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Generos.this, Cart.class));
             }
         });
 

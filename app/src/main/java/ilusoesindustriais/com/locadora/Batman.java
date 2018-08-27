@@ -8,8 +8,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import org.w3c.dom.Text;
-
 public class Batman extends AppCompatActivity {
 
 
@@ -18,6 +16,7 @@ public class Batman extends AppCompatActivity {
 
     private ImageView seta;
     private TextView setaTexto;
+    private TextView tituloBatman;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,12 +28,22 @@ public class Batman extends AppCompatActivity {
         carrinhoTexto = findViewById(R.id.carrinhoTextoId);
         seta = findViewById(R.id.setaId);
         setaTexto = findViewById(R.id.setaTextoId);
+        tituloBatman = findViewById(R.id.tituloDieHardId);
+
+
+
 
 
 
         carrinho.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String titulo = tituloBatman.getText().toString();
+                Intent intent = new Intent(Batman.this, Cart.class);
+                intent.putExtra("nome", titulo);
+
+                startActivity( intent );
+              //  Toast.makeText(getApplicationContext(), titulo, Toast.LENGTH_SHORT).show();
                 Toast.makeText(getApplicationContext(), "Produto Adicionado ao Carrinho", Toast.LENGTH_SHORT).show();
             }
         });

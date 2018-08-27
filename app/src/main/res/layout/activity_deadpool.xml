@@ -124,7 +124,7 @@
         android:text="Voltar" />
 
     <TextView
-        android:id="@+id/textView16"
+        android:id="@+id/tituloDieHardId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
